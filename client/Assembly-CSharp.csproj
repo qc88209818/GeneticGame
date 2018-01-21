@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DD3D77AC-614E-B281-4BF0-8C97125FAE21}</ProjectGuid>
+    <ProjectGuid>{A2859A56-AB4A-51F9-60BB-1B6FC96E8C70}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,8 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Gane.cs" />
      <Compile Include="Assets\Script\GaneAlgorithm.cs" />
-     <Compile Include="Assets\Script\Gene.cs" />
+     <Compile Include="Assets\Script\Main.cs" />
+     <Compile Include="Assets\Script\Monster.cs" />
+     <Compile Include="Assets\Script\MonsterManager.cs" />
+     <Compile Include="Assets\Script\Object.cs" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
