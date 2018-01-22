@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Object\Gane.cs" />
+    <Compile Include="Assets\Script\Object\GaneAlgorithm.cs" />
+    <Compile Include="Assets\Script\Object\Main.cs" />
+    <Compile Include="Assets\Script\Object\Monster.cs" />
+    <Compile Include="Assets\Script\Object\MonsterManager.cs" />
+    <Compile Include="Assets\Script\Object\Object.cs" />
     <Reference Include="UnityEngine.UIAutomation">
       <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\UIAutomation\UnityEngine.UIAutomation.dll</HintPath>
     </Reference>
@@ -83,6 +89,10 @@
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>..\..\..\Library\Unity\cache\packages\packages.unity.com\com.unity.purchasing%401.0.1\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
+    <Compile Include="Assets\Script\Res\ResManager.cs" />
+    <Compile Include="Assets\Script\Res\ResWater.cs" />
+    <Compile Include="Assets\Script\Res\ResPower.cs" />
+    <Compile Include="Assets\Script\Res\ResSprite.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -93,17 +103,7 @@
   </Target>
   -->
   <ItemGroup>
+    <Folder Include="Assets\Script\Res\" />
     <Folder Include="Assets\Script\Object\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Script\Object\Gane.cs" />
-    <Compile Include="Assets\Script\Object\GaneAlgorithm.cs" />
-    <Compile Include="Assets\Script\Object\Main.cs" />
-    <Compile Include="Assets\Script\Object\Monster.cs" />
-    <Compile Include="Assets\Script\Object\MonsterManager.cs" />
-    <Compile Include="Assets\Script\Object\Object.cs" />
-    <Compile Include="Assets\Script\Object\ResWater.cs" />
-    <Compile Include="Assets\Script\Object\ResGane.cs" />
-    <Compile Include="Assets\Script\Object\ResPower.cs" />
   </ItemGroup>
 </Project>
