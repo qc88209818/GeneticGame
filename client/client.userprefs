@@ -1,14 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Gane.cs">
-    <Files>
-      <File FileName="Assets/Script/Monster.cs" Line="7" Column="2" />
-      <File FileName="Assets/Script/Main.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/GaneAlgorithm.cs" Line="4" Column="14" />
-      <File FileName="Assets/Script/Gane.cs" Line="22" Column="3" />
-      <File FileName="Assets/Script/MonsterManager.cs" Line="14" Column="13" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

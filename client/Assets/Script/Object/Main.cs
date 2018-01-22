@@ -11,20 +11,15 @@ public class Main : MonoBehaviour
 	void Start ()
 	{
 		Gane fgane = _algo.randomGane ();
-		fgane.print ();
-
 		Gane mgane = _algo.randomGane ();
-		mgane.print ();
-
-		DateTime dt = new DateTime ();
-		Gane baby = _algo.createGane (fgane, mgane, dt.Second);
-		baby.print ();
+		Monster mm = _mgr.createMonster (fgane, mgane);
+		mm.print ();
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-
+		
 	}
 }
 

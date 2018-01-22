@@ -11,6 +11,12 @@ public class MonsterManager {
 		return _manager;
 	}
 
+	public Monster createMonster(Monster fmonster, Monster mmonster) {
+		int time = getDateTime();
+		Gane gane =_algorithm.createGane(fmonster.getOrigGane(), mmonster.getOrigGane(), time);
+		return new Monster(gane, time);
+	}
+
 	public Monster createMonster(Gane fgane, Gane mgane) {
 		int time = getDateTime();
 		Gane gane =_algorithm.createGane(fgane, mgane, time);

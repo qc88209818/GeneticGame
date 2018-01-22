@@ -19,8 +19,8 @@ public class GaneAlgorithm {
 		Random rm = new Random ();
 
 		uint[] baby = new uint[Gane.GANE_SIZE];
-		for (uint i = 0; i < Gane.GANE_SIZE; ++i) {
-			baby [i] = (uint) rm.Next (0, Gane.GANE_CELL_MAX);
+		for (int i = 0; i < Gane.GANE_SIZE; ++i) {
+			baby [i] = (uint) rm.Next (1, Gane.GANE_CELL_MAX);
 		}
 
 		return new Gane (baby, time);
@@ -30,16 +30,13 @@ public class GaneAlgorithm {
 		return _createGane(fgane, mgane, time);
 	}
 
-	private Gane _createGane(Gane fgane, Gane mgane, int time) {
-		uint[] _mgane = mgane.gane;
-		uint[] _fgane = fgane.gane;
-
+	private Gane _createGane(Gane _fgane, Gane _mgane, int time) {
 		// 随机种子
 		Random rm = new Random (time);
 
 		// 孩子基因
 		uint[] baby = new uint[Gane.GANE_SIZE];
-		for (uint i = 0; i < Gane.GANE_SIZE; ++i) {
+		for (int i = 0; i < Gane.GANE_SIZE; ++i) {
 			if (rm.NextDouble () < 0.5) {
 				baby [i] = _mgane [i];
 			} else {
