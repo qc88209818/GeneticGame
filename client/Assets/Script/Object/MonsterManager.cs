@@ -12,20 +12,15 @@ public class MonsterManager {
 	}
 
 	public Monster createMonster(Monster fmonster, Monster mmonster) {
-		int time = getDateTime();
+		int time = (int) Time.GetTimeStamp();
 		Gane gane =_algorithm.createGane(fmonster.getOrigGane(), mmonster.getOrigGane(), time);
 		return new Monster(gane, time);
 	}
 
 	public Monster createMonster(Gane fgane, Gane mgane) {
-		int time = getDateTime();
+		int time = (int) Time.GetTimeStamp();
 		Gane gane =_algorithm.createGane(fgane, mgane, time);
 		return new Monster(gane, time);
-	}
-
-	private int getDateTime() {
-		DateTime dt = new DateTime();
-		return dt.Second;
 	}
 }
 

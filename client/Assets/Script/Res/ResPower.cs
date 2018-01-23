@@ -2,10 +2,14 @@
  * 能量-资源类
  */
 public class ResPower {
-	uint _count = 0;
+	int _count = 0;
 
-	public ResPower(uint c) {
+	public ResPower(int c = 0) {
 		_count = c;
+	}
+
+	public void add(int c) {
+		_count += c;
 	}
 }
 

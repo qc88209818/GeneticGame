@@ -2,10 +2,14 @@
  * 元素-资源类
  */
 public class ResSprite {
-	uint _count = 0;
+	int _count = 0;
 
-	public ResSprite(uint c) {
+	public ResSprite(int c = 0) {
 		_count = c;
+	}
+
+	public void add(int c) {
+		_count += c;
 	}
 }
 
