@@ -4,21 +4,21 @@
 using UnityEngine;
 using System;
 
-public class Gane {
+public class Gene {
 	public static int GANE_SIZE = 8;
-	public static int GANE_CELL_MAX = 32;
+	public static int GANE_CELL_MAX = 9;
 
-	public uint[] gane = new uint[GANE_SIZE];
+	public uint[] gene = new uint[GANE_SIZE];
 	public int birthtime = 0;	// 出生时间
 
-	public Gane (Gane g)
+	public Gene (Gene g)
 	{
-		gane = g.gane;
+		gene = g.gene;
 	}
 
-	public Gane (uint[] g, int t)
+	public Gene (uint[] g, int t)
 	{
-		gane = g;
+		gene = g;
 		birthtime = t;
 	}
 
@@ -28,7 +28,7 @@ public class Gane {
 		{
 			if (index < GANE_SIZE)
 			{
-				return gane[index];
+				return gene[index];
 			}
 			return 0;
 		}
@@ -38,18 +38,24 @@ public class Gane {
 		{
 			if (index < GANE_SIZE)
 			{
-				gane[index] = value;
+				gene[index] = value;
 			}
 		}
 	}
 
-	public void print() 
-	{
-		string text = "-";
+	public string getOrigGeneText() {
+		string text = " - ";
 		for (int i = 0; i < GANE_SIZE; ++i) 
 		{
-			text += gane[i] + "-";
+			text += gene[i] + " - ";
 		}
+		return text;
+	}
+		
+	public void print() 
+	{
+		string text = getOrigGeneText ();
 		Debug.Log(text);
 	}
+
 }

@@ -51,8 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Object\Gane.cs" />
-     <Compile Include="Assets\Script\Object\GaneAlgorithm.cs" />
+     <Compile Include="Assets\Script\GameManager.cs" />
+     <Compile Include="Assets\Script\Object\Gene.cs" />
+     <Compile Include="Assets\Script\Object\GeneAlgorithm.cs" />
      <Compile Include="Assets\Script\Object\Main.cs" />
      <Compile Include="Assets\Script\Object\Monster.cs" />
      <Compile Include="Assets\Script\Object\MonsterManager.cs" />

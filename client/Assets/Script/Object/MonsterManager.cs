@@ -4,7 +4,7 @@
 using System;
 
 public class MonsterManager {
-	private GaneAlgorithm _algorithm = GaneAlgorithm.Inst();		// 基因 
+	private GeneAlgorithm _algorithm = GeneAlgorithm.Inst();		// 基因 
 
 	static MonsterManager _manager = new MonsterManager ();
 	public static MonsterManager Inst() {
@@ -13,14 +13,14 @@ public class MonsterManager {
 
 	public Monster createMonster(Monster fmonster, Monster mmonster) {
 		int time = (int) Time.GetTimeStamp();
-		Gane gane =_algorithm.createGane(fmonster.getOrigGane(), mmonster.getOrigGane(), time);
-		return new Monster(gane, time);
+		Gene gene =_algorithm.createGene(fmonster.getOrigGene(), mmonster.getOrigGene(), time);
+		return new Monster(gene, time);
 	}
 
-	public Monster createMonster(Gane fgane, Gane mgane) {
+	public Monster createMonster(Gene fgene, Gene mgene) {
 		int time = (int) Time.GetTimeStamp();
-		Gane gane =_algorithm.createGane(fgane, mgane, time);
-		return new Monster(gane, time);
+		Gene gene =_algorithm.createGene(fgene, mgene, time);
+		return new Monster(gene, time);
 	}
 }
 

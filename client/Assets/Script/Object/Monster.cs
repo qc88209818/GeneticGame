@@ -5,39 +5,32 @@ using UnityEngine;
 using System;
 
 public class Monster : Object {
-	Gane _origGane;		// 自己原始基因
-	Gane _surfGane;		// 自己表现基因
+	Gene _origGene;		// 自己原始基因
+	Gene _surfGene;		// 自己表现基因
 	int _birthtime;	// 出生时间
 
-	public Monster (Gane gane, int time)
+	public Monster (Gene gene, int time)
 	{
-		_origGane = gane;
-		_surfGane = gane;
+		_origGene = gene;
+		_surfGene = gene;
 		_birthtime = time;
 	}
 
-	public Gane getOrigGane() {
-		return _origGane;
+	public Gene getOrigGene() {
+		return _origGene;
 	}
 
-	public Gane getSurfGane() {
-		return _surfGane;
+	public Gene getSurfGene() {
+		return _surfGene;
 	}
 
 	public void print() {
 		string text = "Orig: -";
-		for (int i = 0; i < Gane.GANE_SIZE; ++i) 
+		for (int i = 0; i < Gene.GANE_SIZE; ++i) 
 		{
-			text += _origGane[i] + "-";
+			text += _origGene[i] + "-";
 		}
 		Debug.Log(text);
-
-		string text2 = "Surf -";
-		for (int i = 0; i < Gane.GANE_SIZE; ++i) 
-		{
-			text2 += _surfGane[i] + "-";
-		}
-		Debug.Log(text2);
 	}
 }
 
